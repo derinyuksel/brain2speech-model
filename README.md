@@ -40,10 +40,12 @@ If I am opening this project on a new computer or after a long break, here is ho
 
    pip install -r requirements.txt
 
-   🚀 How to Run the Code
-Step 1: Train the Model
+## 🚀 How to Run the Code
+
+### Step 1: Train the Model
 Run this command to push the dummy data through the CNN+LSTM and teach it the patterns.
 
+```bash
 python train.py
 
 Goal: Watch the loss number go down over the 5 epochs. This will generate the dummy_model.pth file.
@@ -51,8 +53,9 @@ Goal: Watch the loss number go down over the 5 epochs. This will generate the du
 Step 2: Run an Offline Prediction
 Run this command to simulate a user uploading an EEG file to the website.
 
-Bash
+
 python predict.py
+
 Goal: It should print out a clean JSON string that the FastAPI backend can read.
 
 Next Steps (Phase 2)
